@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dongsoong New Member Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>새가족 등록</h1>
+    <!-- 새가족 등록 폼 -->
+    <form id="newMemberForm">
+        <label for="name">이름:</label>
+        <input type="text" id="name" required><br><br>
+
+        <label for="gender">성별:</label>
+        <select id="gender">
+            <option value="M">남</option>
+            <option value="F">여</option>
+        </select><br><br>
+
+        <label for="birth">생년월일:</label>
+        <input type="date" id="birth"><br><br>
+
+        <label for="phone">전화번호:</label>
+        <input type="text" id="phone"><br><br>
+
+        <label for="address">주소:</label>
+        <input type="text" id="address"><br><br>
+
+        <label for="baptism">세례 여부:</label>
+        <input type="checkbox" id="baptism"><br><br>
+
+        <label for="photo">사진 업로드:</label>
+        <input type="file" id="photo" accept="image/*"><br><br>
+
+        <button type="submit">등록</button>
+    </form>
+
+    <h2>새가족 목록</h2>
+    <div id="membersList"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
